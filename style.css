@@ -1,0 +1,1842 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'merriweather', Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1rem;    
+}
+body{
+    overflow: auto;
+    background-color: rgba(173, 216, 230, 0.558);
+}
+.estructura{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    row-gap: 3vh;
+}
+.grid__header{
+    grid-area: 1 / 1 / 2 / 4;
+    display: grid;
+    height: 22vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+.headerUp{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr  7fr  1fr;
+    background-color: white;
+    height: 11.6vh;
+}
+.header__tituloUp{
+    position: relative;
+    background-color: black;
+    box-sizing: border-box;
+    z-index: 1;
+    color: white;
+    font-size: 5.6vh;
+    text-align: center;
+    padding:2.38vh 1.17vw;
+    letter-spacing: 2vh;
+}
+ .header__tituloDown{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 10;
+    justify-content: center;
+    top:-12.2vh;
+        
+}
+.header__tituloDown p{
+    position: relative;
+    background-color: rgba(00, 00, 00, 55%);
+    color: rgba(173, 216, 230, 0.758);
+    width: 25vw;    
+    height: 7vh;
+    padding: 3.2vh 0 0.4vh 0;
+    font-size: 3.44vh;
+    text-align: center;
+    letter-spacing: 0.66vh;
+    text-shadow: 0.13vw 0 1.3vh #fff;
+}
+#exitosa{
+    text-align: center;
+    border-left: double 0.19vw grey;
+    border-right: double 0.19vw grey;
+    color: rgba(251, 248, 248, 0.501);
+    top: 7.1vh;
+}
+#aTuAlcance{
+    border-bottom-right-radius: 0.65vw;
+    top: 7.1vh;
+}
+#profesional{
+    border-bottom-left-radius: 0.65vw;
+    top: 7.1vh;
+}
+
+
+.triangulo__UpLeft{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11.8vh 11.8vh 0;
+    border-color: transparent  #000000 transparent transparent;
+    transform: rotate(90deg);
+} 
+.triangulo__UpRight{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:   11.8vh 0 0 11.8vh;
+    border-color: transparent transparent transparent #000000;
+} 
+.header__logoIzq{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header__logoDer{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__logoIzq img{
+    height: 6vh;
+    z-index: 10;
+    align-self: center;
+    position: relative;
+    left:1vw;
+}
+.header__logoDer img{
+    height: 6vh;
+    z-index: 10;
+    align-self: center;
+    position: relative;
+    right: 1vw;
+}
+.grid__asideLeft{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.asideLeft--banner{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+#bannerCrecer{
+    height: 32vh;
+    filter: brightness(3);
+    z-index: 100;
+}
+#gifWork{
+    height: 15vh;
+    margin-top: 7vh;
+}
+.asideLeft--banner p{
+    margin-top: 3vh;
+    font-size: 2vh;
+}
+.headerDown{
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: end;
+    justify-items: center;
+    height: 6.2vh;
+}
+.headerDown ul{
+    display: flex;
+    height: 3vh;
+}
+.barraNav{
+    width: 71.5vw;
+    position: relative;
+    z-index: 100;
+}
+.barraNav__lista {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5 1fr);
+    justify-items: center;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+.barraNav__lista li{
+    width: 20%;
+    padding: 0.5vh;
+    background-color: black;
+    border-top-right-radius: 5vh;
+    font-size: 2.2vh;
+
+}
+.barraNav__lista a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    letter-spacing: 1.2vh;
+    text-shadow: 0.3vh 0vh 0.5vh #fff;
+    color: white;
+}
+
+  
+.grid__main{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.index__main{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+    background-color: #c1c1b37a;
+    border-bottom-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-width: 3vh;
+    border-left: none;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 1.5vh 2vh 2vh 0 black;
+    height: 100%;
+    border-top: none;
+
+}
+.index__main--up{
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url("./Imagenes/condor.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:0 -8vw;    
+}
+.index__main--down{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1.7fr;
+    grid-template-columns: 1fr;
+}
+.main--downTitulo{
+    grid-area: 1 / 1 / 2 / 2;
+    color: black;
+    text-align: center;
+    background-color: #c1c1b3e5;
+    border-bottom:groove 0.3vh rgba(128, 128, 128, 0.381);
+    display: grid;
+    align-items: center;
+}
+.main--downTitulo h2{
+    font-size: 2.2vw;
+}
+.main--downInfo{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 3fr 1fr;
+    
+}
+.main--downInfoLeft{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.main--downInfoLeft h6{
+    font-size: 1.3vw;
+    color: black;
+    background-color:#c1c1b3e5;
+    height: 100%;
+    text-align: center;
+    padding: 1vh;
+}
+.main--downInfoRight{
+    display: grid;
+    background-color: #c1c1b3e5;
+    justify-content: center;
+    align-content: center;
+    border-left: groove 0.3vh rgba(128, 128, 128, 0.381);
+}
+.main--downInfoRight a{
+    font-size: 2.5vw;
+    color: black;
+    text-shadow: 0.2vh 0 0.5vh #000;
+    text-decoration: none;
+    
+}
+.grid__asideRight{
+    grid-area: 2 / 3 / 3 / 4;
+    background-color:rgba(218, 218, 202);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    box-sizing: border-box;
+    border-bottom-right-radius: 1vh;
+}
+.grid__asideRight h3{
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 3.5vh;
+    color: white;
+    text-align: center;
+    
+}
+.grid__asideRight h5{
+    font-size: 2.4vh;
+    background-color:rgba(218, 218, 202);
+    color: black;
+    text-align: left;
+    padding-left: 0.2vw;
+    padding-bottom: 6vh;
+}
+.grid__footer{
+    grid-area: 3 / 1 / 4 / 4;
+    display: grid;
+    background-color: black;
+    color: white;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: 1fr;
+    height: 11.8vh;
+    position: absolute;
+    bottom: 0;
+}
+.footer__logoIzq{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__middle{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.footer__links{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer__links a{
+    border-radius:1.8vh;
+    margin: 1vh;
+    height: 4vh;
+    width: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer__links img{
+    height: 4.5vh;
+}
+ #iconoEmail{
+    height: 6vh;
+} 
+.footer__servicios{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-left: 2vw;
+    width: 100%;
+}
+.tituloServicios p{
+    font-size: 2vh;
+    padding-top: 0.3vh;
+}
+
+.tituloServiciosItems{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vh;
+}
+.tituloServiciosItems a{
+    text-decoration: none;
+    font-size: 1.5vh;
+    color: white;
+}
+.footer__contacto{
+    grid-area: 1 / 3 / 2 / 4;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.footer__contacto--contacto{
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    position: relative;
+    left: 2vw;
+}
+.footer__contacto--contacto p{
+    font-size: 2vh;
+    position: relative;
+    top:-0.3vh;
+}
+
+.footer__contacto--Items{
+    grid-area: 2 / 1 / 3 / 2;
+    
+}
+.footer__contacto--items p{
+    font-size: 1.5vh;
+    padding-top: 0.5vh;
+    position: relative;
+    left: 2vw;
+    bottom: 0.2vh;
+}
+.footer__myself{
+    grid-area: 1 / 4 / 2 / 5;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    border: solid 0.1vh black;
+    position: relative;
+} 
+.footer__myself img{
+    height: 10vh;
+    border: double 1vh rgba(232, 219, 219, 0.358);
+    position: relative;
+    left: 1vw;
+}
+.footer__myself p{
+    font-size: 1.2vh;
+    text-align: center;
+    position: relative;
+    left:1vw;
+}
+.footer__logoDer{
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+.triangulo__DownLeft{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 11.8vh 11.8vh 0;
+    border-color: transparent  #000000 transparent transparent;
+} 
+.triangulo__DownRight{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:   11.8vh 0 0 11.8vh;
+    border-color: transparent transparent transparent #000000;
+    transform: rotate(90deg);
+    position: relative;
+    left:-0.1vw;
+} 
+.footer__logoIzq img{
+    height: 6vh;
+    z-index: 10;
+    align-self: center;
+    position: relative;
+    left:1vw;
+}
+
+.footer__logoDer img{
+    height: 6vh;
+    z-index: 10;
+    align-self: center;
+    position: relative;
+    right: 1vw;
+}
+.main__clientes{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: 1fr;
+    background-color: #fffffff3;
+    border-bottom-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-width: 3vh;
+    border-left: none;
+    overflow: auto;
+    box-shadow: 1.5vh 2vh 2vh 0 black;
+    height: 100%;
+    border-top: none;
+
+}
+.clientes__titulo{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    justify-items: left;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 1);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.clientes__titulo p{
+    font-size: 3vh;
+    letter-spacing: 1vh;
+    color: peachpuff;
+    position: relative;
+    top:1vh;
+    left:1vw;
+}   
+.clientes__cuerpo{
+    grid-area: 2 / 1 / 3 / 2;    
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.clientes__cuerpo--cliente1{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 6fr;
+    justify-items: center;
+    align-items: center;
+}
+.clientes__cuerpo--cliente2{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 8fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.clientes__cuerpo--cliente3{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 8fr;
+    justify-items: center;
+    align-items: center;
+}
+.cliente1--left{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.558);
+}   
+.cliente1--right{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.558);
+    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.cliente2--left{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.958);
+}
+.cliente2--right{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.958);
+}
+.cliente3--left{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.558);
+}
+.cliente3--right{
+    display: grid;
+    background-color: rgba(173, 216, 230, 0.558);
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.clientes__cuerpo--cliente1 img{
+    height: 18vh;
+    width: 100%;
+}
+.clientes__cuerpo--cliente2 img{
+    height: 18vh;
+}
+.clientes__cuerpo--cliente3 img{
+    height: 18vh;
+}
+.cliente1--right p{
+    font-size: 2vh;
+    width: 100%;
+    padding-left: 1vh;
+}
+.cliente2--left p{
+    font-size: 2.4vh;
+    width: 100%;
+    padding-left: 2vh;
+}
+.cliente3--right p{
+    font-size: 2vh;
+    width: 100%;
+    padding-left: 1vh;
+}
+#deniro{
+    text-align: center;
+    width: 100%;
+    height: 60%;
+    padding-right: 15vh;
+    font-size: 3vh;
+    text-decoration: underline;
+}
+#hugest{
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    font-size: 3vh;
+    padding-left: 20vh;
+    text-decoration: underline;
+}
+#andrada{
+    text-align: center;
+    width: 100%;
+    height: 40%;
+    font-size: 3vh;
+    padding-right: 15vh;
+    text-decoration: underline;
+}
+.quienSoy{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    border-bottom-right-radius: 5vh;
+    border-width: 3vh;
+    overflow: hidden; /* todo está correcto en teoría, pero a veces muestra scroll y a veces no... necesito investigarlo un poco más */
+    background-color: rgba(222, 184, 135, 0.527);
+    box-shadow: 1.5vh 2vh 2vh 0 black;
+}
+#bgQuienSoy{
+    background-color: rgba(222, 184, 135, 0.827);
+}
+#bgContacto{
+    background-color: rgba(173, 216, 230, 1);
+}
+.quienSoy__left{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.quienSoy__left img{
+    height: 60.2vh;
+    width: 100%;
+}
+.quienSoy__right{
+    grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns:1fr 2fr;
+    justify-items: center;
+    align-items: center;
+}
+#quienSoy--span1{
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(./Imagenes/epecuen2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(175, 84, 175, 0.644);
+    height: 160%;
+    width: 110%;
+    position: relative;
+    left:-3.2vh;
+   /*  border-bottom: solid 0.2vh black;
+    border-left: solid 0.2vh black;
+ */}
+#quienSoy--span2{
+    grid-area: 2 / 1 / 3 / 2;
+    background-image: url(./Imagenes/epecuen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(175, 84, 125, 0.644);
+    height: 100%;
+    width: 110%;
+    position: relative;
+    left:1.4vh;
+/*     border-top: solid 0.2vh black;
+    border-right: solid 0.2vh black;
+ */}
+
+.quienSoy__right h2{
+    text-align: center;
+    font-size: 7vh;
+    padding-right: 5vh;
+}
+.quienSoy__right h6{
+    width: 90%;
+    font-size: 2.5vh;
+    position: relative;
+    top: 4.2vh;
+    text-align: center;
+    left:1vh;
+}
+.quienSoy__box{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.429);
+    top:55vh;
+    left:50.8vw;
+    height: 9vh;
+    width: 4.7vw;
+    z-index: 10;
+}
+.main__servicios{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: #c1c1b37a;
+    border-bottom-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-width: 3vh;
+    border-left: none;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 1.5vh 2vh 2vh 0 black;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    
+}
+
+.main__servicios--banners{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+}
+.main__servicios--botones{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1vh;
+    column-gap: 1vw;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+}
+.main__servicios--botones p{
+    font-size: 4vh;
+    height: 100%;
+    width: 100%;
+    padding-left: 1vh;
+    border: solid 0.3vh black;
+    border-top-right-radius: 3vh;
+    border-bottom-right-radius:3vh ;
+    /* text-shadow: 20vw 10vh 0.8vh #333; */
+}
+.googleAds--boton{
+    text-shadow: 23vw 9vh 0.8vh #333;
+    background-color: white;
+    margin-left: 0.5vh;
+}
+.mostrarFacebook{
+    height: 14.5vh;
+    width: 35.2vw;
+    background-color: green;
+    opacity: 1%;
+    position: absolute;
+    top:55vh;
+    left:50.5vw;
+}
+.mostrarGoogle{
+    height: 14.5vh;
+    width: 35.2vw;
+    background-color: green;
+    opacity: 1%;
+    position: absolute;
+    top:55vh;
+    left:14.5vw;
+}
+.mostrarInstagram{
+    height: 14.5vh;
+    width: 35.2vw;
+    background-color: green;
+    opacity: 1%;
+    position: absolute;
+    top:71vh;
+    left:14.5vw;
+}
+.mostrarWebDesign{
+    height: 14.5vh;
+    width: 35.2vw;
+    background-color: green;
+    opacity: 1%;
+    position: absolute;
+    top:70.5vh;
+    left:50.5vw;
+}
+.mostrarGoogle:hover + .mg{
+    transition: 1s;
+    opacity: 100%;
+}
+.mostrarFacebook:hover + .mf{
+    transition: 1s;
+    opacity: 100%;
+}
+.mostrarInstagram:hover + .mi{
+    transition: 1s;
+    opacity: 100%;
+}
+.mostrarWebDesign:hover + .mw{
+    transition: 1s;
+    opacity: 100%;
+}
+.facebookAds--boton{
+    text-shadow: 21vw 9vh 0.8vh #333;
+    background-color: white;
+}
+.instagramAds--boton{
+    text-shadow: 20vw 9vh 0.8vh #333;
+    background-color: white;
+    margin-left: 0.5vh;
+    border-bottom-left-radius: 5vh;
+}
+.webDesign--boton{
+    text-shadow: 22.5vw 9vh 0.8vh #333;
+    background-color: white;
+}
+.mf{
+    opacity:0;
+}
+.mi{
+    opacity: 0;
+}
+.mw{
+    opacity: 0;
+}
+.mg{
+    opacity: 0;
+}
+
+.main__servicios--banners img{
+    height: 29.5vh;
+    width: 71.5vw;
+    position: absolute;
+    left:14.25vw;
+    top: 25.2vh;
+}
+.main__contacto{
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr;
+    border-bottom-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-width: 3vh;
+    border-left: none;
+    background-color: white;
+    overflow: auto;
+    box-shadow: 1.5vh 2vh 2vh 0 black;
+    background-image: url(./Imagenes/RAMA.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(173, 216, 230, 1);
+    background-position: -2.5vw -6vh;
+}
+.main__contacto--up{
+    grid-area: 1 / 1/ 2 / 2;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    top:4vh;
+    /* background-color: rgba(148, 246, 182, 0.586); */
+    background-color: rgba(0, 0, 0, 0.436);
+    height: 6vh;
+    border-top: ridge 0.5vh black;
+    border-bottom: ridge 0.5vh black;
+    z-index: 100;
+}
+
+.contacto__titulo b{
+    font-size: 3vh;
+    letter-spacing: 0.6vh;
+    color: white;
+}
+
+.contacto__formulario{
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    z-index: 100;        
+}
+.form__left{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-rows: repeat(4 1fr);
+    height: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.form__middle{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.from__right{
+    grid-area: 1 / 3 / 2 / 4;
+}
+.form__left input{
+    font-style: italic;
+    font-size:larger;
+    font-family: 'Times New Roman', Times, serif;
+    width: 25vw;
+    height: 5vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.436);
+    border: double 0.6vh black;
+}
+    
+ .form__left input::placeholder{
+     color: white;
+     font-size: larger;
+ }
+.contacto__formulario textarea{
+    height: 25vh;
+    width: 30vw;
+    border: double 0.6vh black;
+    font-style: italic;
+    font-size:larger;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.436);
+    resize: none;
+}
+.contacto__formulario textarea:focus{
+    color: white;
+    outline: none;
+    font-size: larger;
+}
+.contacto__formulario input:focus{
+    outline: none;
+    color: white;
+    font-size: larger;
+}
+.contacto__formulario input:focus::placeholder{
+    color: transparent;
+}
+.contacto__formulario textarea:focus::placeholder{
+    color: transparent;
+}
+.contacto__formulario textarea::placeholder{
+    color: white;
+    font-size: x-large;
+}
+#enviar{
+    border: double 0.6vh black;
+    font-style: italic;
+    font-size:larger;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.436);
+    height: 6vh;
+    width: 8vw;
+    border-top-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;    
+}
+/* .main__contacto--rama{
+    position: absolute;
+    height: 20%;
+    width: 18%;
+    left:31vh;
+    top: 72vh;
+    transform: rotate(-30deg);
+    z-index: -10 ;
+}
+.main__contacto--rama2{
+    position: absolute;
+    transform: scale(67%);
+    left: 72.5vh;
+    top: 13vh;
+    z-index: -10 ;
+}
+.main__contacto--rama3{
+    position: absolute;
+    transform: rotate(-30deg);
+    top: 22vh;
+    z-index: 10 ;
+}
+.main__contacto--rama4{
+    position: absolute;
+    transform: scale(66%);
+    top: 65vh;
+    left: 61.3vw;
+    z-index: -1 ;
+} */
+
+@media only screen and (max-width:768px){
+    
+    .estructura{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 2fr 2fr 1fr;
+    }
+    .grid__header{
+        grid-area: 1 / 1 / 2 / 3;
+        display: grid;
+        height: 10vh;
+        width: 100%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .headerUp{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr  4fr  1fr;
+        height: 10.6vh;
+        width: 100%;
+    }
+    .header__tituloUp{
+        position: relative;
+        font-size: 3vh;
+        width: 82vw;
+        left: 5.6vw;
+        height: 10.6vh;
+    }
+     .header__tituloDown{
+        position: relative;
+        left: 8.8vw;
+        top:-13.3vh;
+
+    }
+    .header__tituloDown p{
+        position: relative;
+        width: 25vw;    
+        height: 5vh;
+        font-size: 2vh;
+    }
+    .header__logoIzq{
+        display: grid;
+        justify-items: center;
+    }
+    .header__logoIzq img{
+        position: relative;
+        left: 3vh;
+    }
+    .header__logoDer{
+        display: none;
+    }
+    .triangulo__UpLeft{
+        display: none;
+    }
+    .triangulo__UpRight{
+        display: none;
+    }
+    .grid__asideLeft{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    #bannerCrecer{
+        height: 28vh;
+        position: relative;
+        top:-2vh;
+    }
+    #gifWork{
+        display: none;
+    }
+    .asideLeft--banner p{
+        display: none;
+    }
+    .headerDown{
+        height: 6.2vh;
+    }
+    .barraNav{
+        width: 77.6vw;
+        position: relative;
+        top:-5.7vh;
+        left:8.8vw;
+    }
+    .barraNav__lista li{
+        font-size: 2.2vh;
+    
+    }
+    .barraNav__lista a{
+        font-size: 1vw;
+    }
+    .grid__main{
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    
+    .index__main{
+        display: grid;
+        position: relative;
+        height: 68vh;
+        width: 97%;
+    }
+    .index__main--up{
+        background-position:0;    
+    }
+    
+    .main--downTitulo h2{
+        font-size: 2.5vw;
+    }
+    .main--downInfoLeft h6{
+        font-size: 1.8vw;
+        }
+
+    .grid__asideRight{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .grid__asideRight h3{
+        font-size:2.5vh;
+    }
+    .grid__asideRight h5{
+        font-size: 1.8vh;
+    }
+    .grid__footer{
+        grid-area: 4 / 1 / 5 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .footer__middle{
+        grid-area: 1/ 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footer__links{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .footer__links a{
+        border-radius:1.8vh;
+        margin: 1vh;
+        height: 3.5vh;
+        width: 3vw;
+    }
+    
+    .footer__links img{
+        height: 3.5vh;
+    }
+     #iconoEmail{
+        height: 4vh;
+    } 
+    .footer__servicios{
+        grid-area: 1 / 2 / 2 / 3;
+        display: grid;
+        position: relative;
+        left: -3vw;
+    }
+    .tituloServicios p{
+        font-size: 2vh;
+    }
+    
+    .tituloServiciosItems a{
+        font-size: 1.2vh;
+    }
+    .footer__contacto--contacto{
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        position: relative;
+    }
+    .footer__contacto--items p{
+        font-size: 1.2vh;
+    }
+    .footer__myself img{
+        height: 8vh;
+    }
+    .footer__myself p{
+        font-size: 1vh;
+        left:0.2vw;
+    }
+    .footer__logoIzq{
+        display: none;
+    }
+    .footer__logoDer{
+        display: none;
+    }
+    .footer__logoIzq img{
+        display: none;
+    }
+    .triangulo__DownLeft{
+        display: none;
+    }    
+    .triangulo__DownRight{
+        display: none;
+    }
+    .footer__logoDer img{
+        display: none;
+    }
+    .main__clientes{
+        grid-area: 2 / 2 / 4 / 3;
+        display: grid;
+        position: relative;
+        top:2.8vh;
+        grid-template-rows: 1fr 8fr;
+        grid-template-columns: 1fr;
+        overflow: auto;
+        border-bottom-left-radius: 0;
+        width: 97%;
+        height: 68vh;
+    
+    }
+    .clientes__titulo{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: 40%;
+    }
+    
+    .clientes__cuerpo{
+        grid-area: 2 / 1 / 3 / 2;    
+        display: grid;
+        height: 107%;
+        position: relative;
+        top:-4.4vh;
+    }
+    .clientes__titulo p{
+        font-size: 2vh;
+        letter-spacing: 1vh;
+        position: relative;
+        left:1vw;
+        top:-0.2vh;
+        
+    }
+    .cliente2--left{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .cliente3--right{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    .clientes__cuerpo--cliente1{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 3fr;
+    }
+    .clientes__cuerpo--cliente2{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr;
+    }
+    .clientes__cuerpo--cliente3{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 3fr;
+    }
+    .clientes__cuerpo--cliente1 img{
+        width: 80%;
+    }
+    .cliente1--right p{
+        font-size: 1.5vh;
+        height: 100%;
+    }
+    .cliente2--left p{
+        font-size: 1.7vh;
+    }
+    .cliente3--right p{
+        font-size: 1.7vh;
+    }
+    #deniro{
+        font-size: 2vh;
+        padding-right: 18vw;
+    }
+    #hugest{
+        font-size: 2vh;
+        padding-left: 14vh;
+    }
+    #andrada{
+        font-size: 2vh;
+        padding-right: 18vh;
+    }
+    #hugest__text{
+        height: 100%;
+        position: relative;
+        top: -2vh;
+    }
+    #andrada__text{
+        height: 100%;
+        position: relative;
+        top: -1vh;
+    }
+    .quienSoy{
+        grid-area: 2 / 2 / 4 / 3;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        width: 97%;
+        height: 68vh;
+    }
+    .quienSoy__left img{
+        display: none;
+    }
+    .quienSoy__right{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns:1fr 2fr;
+        justify-items: center;
+        align-items: center;
+    }
+    #quienSoy--span1{
+        grid-area: 1 / 2 / 2 / 3;
+        position: relative;
+        left:-2.9vh;
+        height: 120%;
+        top:6vh;
+    }
+    
+    .quienSoy__box{
+        display: none;
+    }
+    .main__servicios{
+        grid-area: 2 / 2 / 4 / 3;
+        width: 97%;
+        position: relative;
+        top:2.8vh;
+        height: 68vh;
+        display: grid;
+        overflow: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+    }
+    
+    .main__servicios--banners{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: black;
+    }
+    .mostrarFacebook{
+        height: 14.5vh;
+        width: 36.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:35vh;
+        left: 39.8vw;
+    }
+    .mostrarGoogle{
+        height: 14.5vh;
+        width: 36.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:35vh;
+        left:1.5vw;
+    }
+    .mostrarInstagram{
+        height: 14.5vh;
+        width: 36.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:52.1vh;
+        left:1.5vw;
+    }
+    .mostrarWebDesign{
+        height: 14.5vh;
+        width: 37.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:52.5vh;
+        left:39.8vw;
+    }
+    .mostrarGoogle:hover + .mg{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarFacebook:hover + .mf{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarInstagram:hover + .mi{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarWebDesign:hover + .mw{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mf{
+        opacity:0;
+    }
+    .mi{
+        opacity: 0;
+    }
+    .mw{
+        opacity: 0;
+    }
+    .mg{
+        opacity: 0;
+    }
+    
+    .main__servicios--banners img{
+        height: 30vh;
+        width: 99.5%;
+        position: absolute;
+        left:0; 
+        top: 2.2vh;
+    }
+    
+    .main__contacto{
+        grid-area: 2 / 2 / 4 / 3;
+        width: 97%;
+        position: relative;
+        top:2.8vh;
+        height: 68vh;
+        display: grid;
+        overflow: auto;
+        background-position: -4vh;
+    }
+    
+    .contacto__titulo b{
+        font-size: 2vh;
+        letter-spacing: 0.4vh;
+    }
+    .form__left input{
+        font-size: 2vh;
+    }
+        
+     .form__left input::placeholder{
+         font-size: 2vh;
+     }
+    .contacto__formulario textarea{
+        font-size:2vh;
+    }
+    .contacto__formulario textarea:focus{
+        color: white;
+        outline: none;
+        font-size: 2vh;
+    }
+    .contacto__formulario input:focus{
+        outline: none;
+        color: white;
+        font-size: 2vh;
+    }
+    .contacto__formulario textarea::placeholder{
+        color: white;
+        font-size:3vh;
+    }
+    #enviar{
+        font-size:2vh;
+    } 
+ 
+} 
+@media only screen and (max-width:480px){
+    
+    .estructura{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        row-gap: 0;
+        column-gap: 0;
+    }
+    .grid__header{
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .grid__main{
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .grid__footer{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+    .header__tituloUp{
+        position: relative;
+        font-size: 1.5vh;
+        width: 84vw;
+        left: 5.6vw;
+        height: 10.6vh;
+        padding-top: 3.2vh;
+    }
+    #exitosa{
+        border: none;
+    }
+    .header__tituloDown p{
+        font-size: 1vh;
+    }
+    .header__logoIzq img{
+        position: relative;
+        left: 3vh;
+        height: 3vh;
+        width: 10vw;
+    }
+    
+    .grid__asideLeft{
+        grid-area: 2 / 1 / 3 / 2;
+        display: none;
+    }
+    
+    .barraNav{
+        width: 98.5%;
+        position: relative;
+        left:0;
+    }
+    .barraNav__lista a{
+        font-size: 2vw;
+        letter-spacing: 0;
+    }
+    .index__main{
+        display: grid;
+        position: relative;
+        height: 80vh;
+        width: 98%;
+        top:6.6vh;
+        margin-left: 0.5vw;
+    }
+    .index__main--up{
+        background-position-x: -40vw;
+    }
+    .main--downTitulo h2{
+        font-size: 3.1vw;
+    }
+    .main--downInfoLeft h6{
+        font-size: 3.1vw;
+        }
+    .main--downInfoRight a{
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .grid__asideRight{
+        grid-area: 3 / 1 / 4 / 2;
+        display: none;
+    }
+    .grid__asideRight h3{
+        font-size:2.5vh;
+    }
+    .grid__asideRight h5{
+        font-size: 1.8vh;
+    }
+    .grid__footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        height: 8vh;
+        top:11vh;
+        position: relative;
+    }
+    .footer__middle{
+        grid-area: 1/ 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 3fr 3fr;
+        justify-items: center;
+        align-items: center;
+        height: 8vh;
+    }
+    .footer__links{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+    .footer__links a{
+        border-radius:1.8vh;
+        height: 3.5vh;
+        width: 3vw;
+    }
+    .footer__servicios{
+        grid-area: 1 / 2 / 2 / 3;
+        display: grid;
+        position: relative;
+        height: 8vh;
+        left:3vw;
+        top:-0.1vh;
+        width: 30vw;
+    }
+    .tituloServicios p{
+        font-size: 1.5vh;
+        padding-top: 1vh;
+    }
+    
+    .tituloServiciosItems a{
+        font-size: 1.2vh;
+
+    }
+    .footer__contacto{
+        grid-area: 1 / 3 / 2 / 4;
+        position: relative;
+    }
+
+    .footer__contacto--contacto{
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        position: relative;
+        top:0.6vh;
+    }
+    .footer__contacto--contacto p{
+        font-size: 1.5vh;
+
+    }
+    .footer__contacto--items p{
+        font-size: 1.5vw;
+    }
+    .footer__myself{
+        grid-area: 2 / 2 / 3 / 3;
+        display: none;
+    }
+    .main__clientes{
+        grid-area: 2 / 1 / 3 / 2;
+        display: grid;
+        position: relative;
+        grid-template-rows: 1fr 8fr;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        border-bottom-left-radius: 0;
+        height: 80vh;
+        width: 98.4%;
+        top:6.5vh;
+        margin-left: 0.8vw;
+    }
+    
+    .quienSoy{
+        grid-area: 2 / 1 / 3 / 2;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        height: 75vh;
+        width: 98.4%;
+        position: relative;
+        top:1.8vh;
+        margin-left: 1.2vw;
+    }
+    
+    .main__servicios{
+        grid-area: 2 / 1 / 3 / 2;
+        width: 98.3%;
+        position: relative;
+        top:0vh;
+        margin-left: 0.9vw;
+        height: 68vh;
+        display: grid;
+        overflow: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        
+    }
+    .mostrarFacebook{
+        height: 14.5vh;
+        width: 46.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top: 35vh;
+        left: 50.8vw;
+    }
+    .mostrarGoogle{
+        height: 14.5vh;
+        width: 46.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:35vh;
+        left:1.5vw;
+    }
+    .mostrarInstagram{
+        height: 14.5vh;
+        width: 46.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:52.1vh;
+        left:1.5vw;
+    }
+    .mostrarWebDesign{
+        height: 14.5vh;
+        width: 46.2vw;
+        background-color: green;
+        opacity: 1%;
+        position: absolute;
+        top:52.5vh;
+        left:50.8vw;
+    }
+    .mostrarGoogle:hover + .mg{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarFacebook:hover + .mf{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarInstagram:hover + .mi{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mostrarWebDesign:hover + .mw{
+        transition: 1s;
+        opacity: 100%;
+    }
+    .mf{
+        opacity:0;
+    }
+    .mi{
+        opacity: 0;
+    }
+    .mw{
+        opacity: 0;
+    }
+    .mg{
+        opacity: 0;
+    }
+    
+    .main__servicios--banners img{
+        height: 30vh;
+        width: 99.5%;
+        position: absolute;
+        left:0; 
+        top: 2.2vh;
+    }
+    
+    .main__contacto{
+        grid-area: 2 / 1 / 3 / 2;
+        background-position: -4vh;
+        width: 98.3%;
+        position: relative;
+        top:0vh;
+        margin-left: 0.9vw;
+        height: 68vh;
+        display: grid;
+        overflow: auto;
+        grid-template-rows: 1fr 4fr;
+        grid-template-columns: 1fr;
+    }
+    .main__contacto--up{
+        grid-area: 1 / 1 / 2 / 2;
+        width: 99%;
+    }
+
+    .contacto__formulario{
+        grid-area: 2 / 1 / 3 / 2;
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        z-index: 100;
+        width: 100%;        
+    }
+    .contacto__titulo b{
+        font-size: 1.5vh;
+        letter-spacing: 0.2vh;
+    }
+    .form__left input{
+        font-size: 2vh;
+        width: 42vw;
+        height: 4vh;
+        margin-top: 2vh;
+    }
+        
+    .form__left{
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .form__middle{
+        grid-area: 2 / 1 / 3 / 2;
+        height: 100%;
+        width: 100%;
+    }
+    .from__right{
+        grid-area: 3 / 1 / 4 / 2;
+    }
+     .form__left input::placeholder{
+         font-size: 2vh;
+     }
+    .contacto__formulario textarea{
+        font-size:2vh;
+        position: relative;
+        width: 80vw;
+        left: 9vw; 
+        top:5vh;
+        }
+    .contacto__formulario textarea:focus{
+        color: white;
+        outline: none;
+        font-size: 2vh;
+    }
+    .contacto__formulario input:focus{
+        outline: none;
+        color: white;
+        font-size: 2vh;
+    }
+    .contacto__formulario textarea::placeholder{
+        color: white;
+        font-size:2.5vh;
+    }
+    #enviar{
+        font-size:2vh;
+        position: relative;
+        width: 30vw;
+        top:3vh;   
+    } 
+
+ 
+} 
