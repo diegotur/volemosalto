@@ -124,24 +124,93 @@ body{
     grid-area: 2 / 1 / 3 / 2;
 }
 .asideLeft--banner{
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
     align-items: center;
-    justify-content: flex-start;
+    width: 12vw;
+    margin-left: 1.2vw;
     height: 100%;
+    background-color: black;
+    border-radius: 3vw;
 }
-#bannerCrecer{
-    height: 32vh;
-    filter: brightness(3);
-    z-index: 100;
+.asideLeft--banner span{
+    color: black;
 }
-#gifWork{
-    height: 15vh;
-    margin-top: 7vh;
+#generar{
+    padding-top: 3vh;
+    font-size: 1.7vw;
+    text-align: center;
+    color: white;
+    width: 12vw;
+    height: 100%;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+    animation-name: bgAsideLeft;
+    animation-duration: 15s; 
+    animation-iteration-count: infinite;
+    border-bottom: solid 1vh  rgb(197, 227, 237);
 }
-.asideLeft--banner p{
-    margin-top: 3vh;
-    font-size: 2vh;
+.generarQS{
+    border-bottom: solid 1vh rgba(221, 193, 157, 0.927)!important;
+}
+.aumentarQS{
+    border-bottom: solid 1vh rgba(221, 193, 157, 0.927)!important;
+}
+#aumentar{
+    padding-top: 2.9vh;
+    font-size: 1.7vw;
+    text-align: center;
+    color: black;
+    width: 12vw;
+    height: 100%;
+    animation-name: bgAsideLeft2;
+    animation-duration: 15s; 
+    border-bottom: solid 1vh  rgb(197, 227, 237);
+    animation-iteration-count: infinite;
+
+}
+#animar{
+    padding-top: 3vh;
+    font-size: 1.8vw;
+    text-align: center;
+    color: black;
+    width: 12vw;
+    height: 100%;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    animation-name: bgAsideLeft3;
+    animation-duration: 15s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgAsideLeft {
+    0%{
+    color: black;
+    }
+        
+    100%{
+    color: white;
+    }
+}
+@keyframes bgAsideLeft2 {
+    33%{
+    color: black;
+    }
+    
+    100%{
+    color: white;
+    }
+}
+@keyframes bgAsideLeft3 {
+    66%{
+    color: black;
+    }    
+    100%{
+    color: white;
+    }
 }
 .headerDown{
     grid-area: 3 / 1 / 4 / 2;
@@ -269,30 +338,18 @@ body{
 }
 .grid__asideRight{
     grid-area: 2 / 3 / 3 / 4;
-    background-color:rgba(218, 218, 202);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-left: 1vw;
-    margin-right: 1vw;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    margin-left: 1.5vw;
+    height: 40vh;
+    margin-top: 6vh;
+    width: 24vh;
     box-sizing: border-box;
     border-bottom-right-radius: 1vh;
 }
-.grid__asideRight h3{
-    background-color: black;
-    text-transform: uppercase;
-    font-size: 3.5vh;
-    color: white;
-    text-align: center;
-    
-}
-.grid__asideRight h5{
-    font-size: 2.4vh;
-    background-color:rgba(218, 218, 202);
-    color: black;
-    text-align: left;
-    padding-left: 0.2vw;
-    padding-bottom: 6vh;
+.grid__asideRight video{
+    width: 24vh;
 }
 .grid__footer{
     grid-area: 3 / 1 / 4 / 4;
@@ -1021,7 +1078,7 @@ body{
         height: 100vh;
         display: grid;
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: 1fr 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     .grid__header{
         grid-area: 1 / 1 / 2 / 3;
@@ -1077,18 +1134,44 @@ body{
     }
     .grid__asideLeft{
         grid-area: 2 / 1 / 3 / 2;
+        
     }
-    #bannerCrecer{
-        height: 28vh;
-        position: relative;
-        top:-2vh;
+    .asideLeft--banner{
+        display: grid;
+        align-items: start;
+        width: 18vw;
+        height: 40vh;
     }
-    #gifWork{
-        display: none;
+    .asideLeft--banner span{
+        color: black;
     }
-    .asideLeft--banner p{
-        display: none;
+    #generar{
+        font-size: 2.3vw;
+        width: 18vw;
+        height: 100%;
+        padding-left: 1vw;
+        padding-top: 1vh;
+        padding-right: 1vw;
     }
+    #aumentar{
+        font-size: 2.3vw;
+        padding-left: 1vw;
+        padding-top: 1vh;
+        padding-right: 1vw;
+        width: 18vw;
+        height: 100%;
+    
+    }
+    #animar{
+        font-size: 2.5vw;
+        padding-left: 2vw;
+        padding-top: 1.5vh;
+        padding-right: 2vw;
+        width: 18vw;
+        height: 100%;
+    }
+
+    
     .headerDown{
         height: 6.2vh;
     }
@@ -1112,7 +1195,6 @@ body{
     .index__main{
         display: grid;
         position: relative;
-        height: 68vh;
         width: 97%;
     }
     .index__main--up{
@@ -1126,14 +1208,18 @@ body{
         font-size: 1.8vw;
         }
 
-    .grid__asideRight{
+   .grid__asideRight{
         grid-area: 3 / 1 / 4 / 2;
+        display: grid;
+        justify-items: start;
+        align-items: start;
+        width: 18vw;
+        position: relative;
+        margin-left: 2.7vh;
+        top:-8vh;
     }
-    .grid__asideRight h3{
-        font-size:2.5vh;
-    }
-    .grid__asideRight h5{
-        font-size: 1.8vh;
+    .grid__asideRight video{
+        width: 16vw;
     }
     .grid__footer{
         grid-area: 4 / 1 / 5 / 3;
@@ -1563,13 +1649,7 @@ body{
         grid-area: 3 / 1 / 4 / 2;
         display: none;
     }
-    .grid__asideRight h3{
-        font-size:2.5vh;
-    }
-    .grid__asideRight h5{
-        font-size: 1.8vh;
-    }
-    .grid__footer{
+   .grid__footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
