@@ -15,14 +15,15 @@ body{
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
-    row-gap: 3vh;
+    row-gap: 3vw;
 }
 .grid__header{
     grid-area: 1 / 1 / 2 / 4;
     display: grid;
-    height: 22vh;
+    height: 12vw;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
+    
 }
 .headerUp{
     grid-area: 1 / 1 / 2 / 2;
@@ -30,7 +31,7 @@ body{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr  7fr  1fr;
     background-color: white;
-    height: 11.6vh;
+    height: 6.4vw;
 }
 .header__tituloUp{
     position: relative;
@@ -38,10 +39,11 @@ body{
     box-sizing: border-box;
     z-index: 1;
     color: white;
-    font-size: 5.6vh;
+    font-size: 3.2vw;
     text-align: center;
-    padding:2.38vh 1.17vw;
-    letter-spacing: 2vh;
+    padding: 1.3vw 1.17vw;
+    letter-spacing: 1.2vw;
+    height: 6.45vw;
 }
  .header__tituloDown{
     display: flex;
@@ -49,7 +51,7 @@ body{
     position: relative;
     z-index: 10;
     justify-content: center;
-    top:-12.2vh;
+    top:-6.7vw;
         
 }
 .header__tituloDown p{
@@ -57,27 +59,27 @@ body{
     background-color: rgba(00, 00, 00, 55%);
     color: rgba(173, 216, 230, 0.758);
     width: 25vw;    
-    height: 7vh;
-    padding: 3.2vh 0 0.4vh 0;
-    font-size: 3.44vh;
+    height: 4vw;
+    padding: 1.8vw 0 0.4vw 0;
+    font-size: 1.7vw;
     text-align: center;
-    letter-spacing: 0.66vh;
-    text-shadow: 0.13vw 0 1.3vh #fff;
+    letter-spacing: 0.36vw;
+    text-shadow: 0.13vw 0 1.3vw #fff;
 }
 #exitosa{
     text-align: center;
     border-left: double 0.19vw grey;
     border-right: double 0.19vw grey;
     color: rgba(251, 248, 248, 0.501);
-    top: 7.1vh;
+    top: 3.9vw;
 }
 #aTuAlcance{
     border-bottom-right-radius: 0.65vw;
-    top: 7.1vh;
+    top: 3.9vw;
 }
 #profesional{
     border-bottom-left-radius: 0.65vw;
-    top: 7.1vh;
+    top: 3.9vw;
 }
 
 
@@ -85,7 +87,7 @@ body{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 11.8vh 11.8vh 0;
+    border-width: 0 6.45vw 6.45vw 0;
     border-color: transparent  #000000 transparent transparent;
     transform: rotate(90deg);
 } 
@@ -93,7 +95,7 @@ body{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width:   11.8vh 0 0 11.8vh;
+    border-width:   6.45vw 0 0 6.45vw;
     border-color: transparent transparent transparent #000000;
 } 
 .header__logoIzq{
@@ -107,14 +109,14 @@ body{
 }
 
 .header__logoIzq img{
-    height: 6vh;
+    height: 3.5vw;
     z-index: 10;
     align-self: center;
     position: relative;
     left:1vw;
 }
 .header__logoDer img{
-    height: 6vh;
+    height: 3.5vw;
     z-index: 10;
     align-self: center;
     position: relative;
@@ -138,7 +140,7 @@ body{
     color: black;
 }
 #generar{
-    padding-top: 3vh;
+    padding-top: 1.8vw;
     font-size: 1.7vw;
     text-align: center;
     color: white;
@@ -149,16 +151,16 @@ body{
     animation-name: bgAsideLeft;
     animation-duration: 15s; 
     animation-iteration-count: infinite;
-    border-bottom: solid 1vh  rgb(197, 227, 237);
+    border-bottom: solid 0.6vw  rgb(197, 227, 237);
 }
 .generarQS{
-    border-bottom: solid 1vh rgba(221, 193, 157, 0.927)!important;
+    border-bottom: solid 0.6vw rgba(221, 193, 157, 0.927)!important;
 }
 .aumentarQS{
-    border-bottom: solid 1vh rgba(221, 193, 157, 0.927)!important;
+    border-bottom: solid 0.6vw rgba(221, 193, 157, 0.927)!important;
 }
 #aumentar{
-    padding-top: 2.9vh;
+    padding-top: 1.6vw;
     font-size: 1.7vw;
     text-align: center;
     color: black;
@@ -166,19 +168,19 @@ body{
     height: 100%;
     animation-name: bgAsideLeft2;
     animation-duration: 15s; 
-    border-bottom: solid 1vh  rgb(197, 227, 237);
+    border-bottom: solid 0.6vw  rgb(197, 227, 237);
     animation-iteration-count: infinite;
 
 }
 #animar{
-    padding-top: 3vh;
+    padding-top: 1.6vw;
     font-size: 1.8vw;
     text-align: center;
     color: black;
     width: 12vw;
     height: 100%;
-    padding-left: 1.5vh;
-    padding-right: 1.5vh;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
     border-bottom-left-radius: 3vw;
     border-bottom-right-radius: 3vw;
     animation-name: bgAsideLeft3;
@@ -219,14 +221,14 @@ body{
     grid-template-columns: 1fr;
     align-items: end;
     justify-items: center;
-    height: 6.2vh;
+    height: 4.4vw;
 }
 .headerDown ul{
     display: flex;
-    height: 3vh;
+    height: 1.6vw;
 }
 .barraNav{
-    width: 71.5vw;
+    width: 70.9vw;
     position: relative;
     z-index: 100;
 }
@@ -242,17 +244,17 @@ body{
 }
 .barraNav__lista li{
     width: 20%;
-    padding: 0.5vh;
+    padding: 0.3vw;
     background-color: black;
-    border-top-right-radius: 5vh;
-    font-size: 2.2vh;
+    border-top-right-radius: 5vw;
+    font-size: 1.6vw;
 
 }
 .barraNav__lista a{
     text-decoration: none;
     font-size: 1.2vw;
-    letter-spacing: 1.2vh;
-    text-shadow: 0.3vh 0vh 0.5vh #fff;
+    letter-spacing: 0.6vw;
+    text-shadow: 0.3vw 0vh 0.5vw #fff;
     color: white;
 }
 
@@ -266,13 +268,13 @@ body{
     grid-template-rows: 2fr 1fr;
     grid-template-columns: 1fr;
     background-color: #c1c1b37a;
-    border-bottom-right-radius: 5vh;
-    border-bottom-left-radius: 5vh;
-    border-width: 3vh;
+    border-bottom-right-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+    border-width: 3vw;
     border-left: none;
     background-color: white;
     overflow: auto;
-    box-shadow: 1.5vh 2vh 2vh 0 black;
+    box-shadow: 0.8vw 1vw 1vw 0 black;
     height: 100%;
     border-top: none;
 
@@ -295,7 +297,7 @@ body{
     color: black;
     text-align: center;
     background-color: #c1c1b3e5;
-    border-bottom:groove 0.3vh rgba(128, 128, 128, 0.381);
+    border-bottom:groove 0.3vw rgba(128, 128, 128, 0.381);
     display: grid;
     align-items: center;
 }
@@ -315,24 +317,24 @@ body{
     align-items: center;
 }
 .main--downInfoLeft h6{
-    font-size: 1.3vw;
+    font-size: 1.4vw;
     color: black;
     background-color:#c1c1b3e5;
     height: 100%;
     text-align: center;
-    padding: 1vh;
+    padding: 0.6vw;
 }
 .main--downInfoRight{
     display: grid;
     background-color: #c1c1b3e5;
     justify-content: center;
     align-content: center;
-    border-left: groove 0.3vh rgba(128, 128, 128, 0.381);
+    border-left: groove 0.3vw rgba(128, 128, 128, 0.381);
 }
 .main--downInfoRight a{
     font-size: 2.5vw;
     color: black;
-    text-shadow: 0.2vh 0 0.5vh #000;
+    text-shadow: 0.1vw 0 0.3vw #000;
     text-decoration: none;
     
 }
@@ -342,14 +344,15 @@ body{
     justify-items: start;
     align-items: start;
     margin-left: 1.5vw;
-    height: 40vh;
-    margin-top: 6vh;
-    width: 24vh;
+    height: 27vw;
+    width: 12vw;
     box-sizing: border-box;
-    border-bottom-right-radius: 1vh;
+    border-bottom-right-radius: 0.6vw;
+    border: solid red;
 }
 .grid__asideRight video{
-    width: 24vh;
+    width: 12vw;
+    height: 27vw;
 }
 .grid__footer{
     grid-area: 3 / 1 / 4 / 4;
@@ -358,9 +361,10 @@ body{
     color: white;
     grid-template-columns: 1fr 7fr 1fr;
     grid-template-rows: 1fr;
-    height: 11.8vh;
+    height: 6.45vw;
     position: absolute;
     bottom: 0;
+    
 }
 .footer__logoIzq{
     grid-area: 1 / 1 / 2 / 2;
@@ -383,9 +387,9 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .footer__links a{
-    border-radius:1.8vh;
-    margin: 1vh;
-    height: 4vh;
+    border-radius:0.6vw;
+    margin: 1vw;
+    height: 2vw;
     width: 2vw;
     display: flex;
     justify-content: center;
@@ -394,10 +398,10 @@ body{
 }
 
 .footer__links img{
-    height: 4.5vh;
+    height: 2vw;
 }
  #iconoEmail{
-    height: 6vh;
+    height: 2.8vw;
 } 
 .footer__servicios{
     grid-area: 1 / 2 / 2 / 3;
@@ -410,8 +414,8 @@ body{
     width: 100%;
 }
 .tituloServicios p{
-    font-size: 2vh;
-    padding-top: 0.3vh;
+    font-size: 1vw;
+    padding-top: 0.1vw;
 }
 
 .tituloServiciosItems{
@@ -422,11 +426,11 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 1.5vh;
+    font-size: 1.1vw;
 }
 .tituloServiciosItems a{
     text-decoration: none;
-    font-size: 1.5vh;
+    font-size: 0.8vw;
     color: white;
 }
 .footer__contacto{
@@ -444,9 +448,9 @@ body{
     left: 2vw;
 }
 .footer__contacto--contacto p{
-    font-size: 2vh;
+    font-size: 1vw;
     position: relative;
-    top:-0.3vh;
+    top:-0.1vw;
 }
 
 .footer__contacto--Items{
@@ -454,11 +458,11 @@ body{
     
 }
 .footer__contacto--items p{
-    font-size: 1.5vh;
-    padding-top: 0.5vh;
+    font-size: 0.8vw;
+    padding-top: 0.2vw;
     position: relative;
     left: 2vw;
-    bottom: 0.2vh;
+    bottom: 0.1vw;
 }
 .footer__myself{
     grid-area: 1 / 4 / 2 / 5;
@@ -469,17 +473,17 @@ body{
     align-items: center;
     height: 100%;
     box-sizing: border-box;
-    border: solid 0.1vh black;
+    border: solid 0.1vw black;
     position: relative;
 } 
 .footer__myself img{
-    height: 10vh;
-    border: double 1vh rgba(232, 219, 219, 0.358);
+    height: 5vw;
+    border: double 0.6vw rgba(232, 219, 219, 0.358);
     position: relative;
     left: 1vw;
 }
 .footer__myself p{
-    font-size: 1.2vh;
+    font-size: 0.7vw;
     text-align: center;
     position: relative;
     left:1vw;
@@ -494,21 +498,21 @@ body{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 11.8vh 11.8vh 0;
+    border-width: 0 6.45vw 6.45vw 0;
     border-color: transparent  #000000 transparent transparent;
 } 
 .triangulo__DownRight{
     width: 0;
     height: 0;
     border-style: solid;
-    border-width:   11.8vh 0 0 11.8vh;
+    border-width:   6.45vw 0 0 6.45vw;
     border-color: transparent transparent transparent #000000;
     transform: rotate(90deg);
     position: relative;
     left:-0.1vw;
 } 
 .footer__logoIzq img{
-    height: 6vh;
+    height: 3.5vw;
     z-index: 10;
     align-self: center;
     position: relative;
@@ -516,7 +520,7 @@ body{
 }
 
 .footer__logoDer img{
-    height: 6vh;
+    height: 3.5vw;
     z-index: 10;
     align-self: center;
     position: relative;
