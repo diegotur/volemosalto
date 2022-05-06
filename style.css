@@ -348,11 +348,70 @@ body{
     width: 12vw;
     box-sizing: border-box;
     border-bottom-right-radius: 0.6vw;
-    border: solid red;
+    
 }
 .grid__asideRight video{
     width: 12vw;
-    height: 27vw;
+    
+
+}
+.whatsappAnim {
+	background: #25d366;
+	color: white;
+	position: relative;
+	top: 1.8vw;
+    left: 3.6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 2.35vw;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+.fa-whatsapp{
+    font-size: 3.8vw;
+}
+.whatsappInput{
+    width: 10vw;
+    position: relative;
+	top: -5.5vw;
+    left: 1vw;
+    
+}
+.teLlamo p{
+    font-size: 1.7vw;
+    text-align: center;
+    position: relative;
+    color: black;
+    background-color: rgb(220, 242, 245);
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+
+}
+.teLlamo{
+    background-color: black;
+    height: 16vw;
+    position: relative;
+    top: 6vw;
+    width: 12vw;
+    border-radius: 1vw;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
 }
 .grid__footer{
     grid-area: 3 / 1 / 4 / 4;
@@ -1074,7 +1133,7 @@ body{
     left: 61.3vw;
     z-index: -1 ;
 } */
-
+/* 
 @media only screen and (max-width:768px){
     
     .estructura{
@@ -1571,7 +1630,7 @@ body{
         font-size:2vh;
     } 
  
-} 
+}  */
 @media only screen and (max-width:480px){
     
     .estructura{
